@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+body {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 5rem 0 0 0 ;
+    font-family: Roboto;
+    color: var(--dark-slate-grey);
+}
+.card {
+    width: 20rem;
+}
+#card img {
+    margin-bottom: 2rem;
+}
+#card h1 {
+    margin-bottom: 1rem;
+    font-size: 35px;
+}#card p {
+    font-size: 12px;
+}
+#card button {
+    padding: 1.2rem;
+    color: var(--white);
+    background-color: var(--dark-slate-grey);
+    border-radius: 9px;
+    border: none;
+    width: 19rem;
+    margin-top: 11rem;
+}
+#card button:hover {
+    background-color: var(--tomato);
+}
+@media (min-width:650px) {
+    body {
+       padding: 0; 
+       background-color: var(--dark-slate-grey);
+    }
+    #card img {
+        margin-bottom: 1rem;
+    }
+    .card {
+        /* height: 24rem; */
+        background-color: var(--white);
+        padding: 2rem;
+        min-width: 21rem;
+        border-radius: 1rem;
+    }
+    #card h1 {
+        font-size: 39px;
+    }
+    #card p {
+        font-size: 12px;
+    }
+    #card button {
+        margin-top: 1rem;
+        box-shadow: 5px blur;
+        width: 17.5rem;
+    }
+
+}
